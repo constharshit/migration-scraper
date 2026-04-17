@@ -1,0 +1,30 @@
+I am looking to design a scraper - which scrapes the html of the page - the idea is to whenevr we migrate a client from one CMS to another - then the
+  content authoring time will be saved. Assume that the previous cms and the current cms have template to template matching.
+
+My idea to scrape the HTML page and use Anthropic API to cleverly go thorugh the rendered HTML and store fields and their content and store it in JSON so that content author can just copy paste.
+But this is an idea and I maybe wrong or there may be even better ideas. I would like to hear your thoughts on this approach and if you have any suggestions or improvements to make it more efficient and effective.
+ 
+We can use any language for the scraper, but I am thinking of using Python with libraries like BeautifulSoup for HTML parsing and requests for making HTTP requests. The Anthropic API can be used to analyze the HTML structure and extract relevant fields and their content.
+
+
+  Usage:
+  # Preview a single page (prints fields to terminal, no file written)
+    python -m scraper.cli preview https://bell.bank/
+  # Scrape one or more URLs → writes JSON to ./output/
+  python -m scraper.cli scrape --url https://bell.bank/
+
+  # Scrape from a file of URLs
+  python -m scraper.cli scrape --url-file urls.txt
+
+  For leadership presentation:
+  - README.md covers: what it does, how to run, current cost table, 4 improvement options each with cost impact and LOE                          
+  Distribution right now: Zip the folder and share. Recipient needs Python 3.11+ and an Anthropic API key — that's the only setup. Steps are in
+   the README.
+                                                                                                                                               
+  Free hosting: Streamlit Cloud (3–4 days LOE) — gives a browser UI so anyone can paste URLs and download results with no terminal. Needs a
+  GitHub repo first (30 min to set up).
+
+  Cost recap in the README:
+  - Current pure AI: ~$25/1,000 pages
+  - With template schema: ~$21/1,000 pages (15% cheaper, more accurate)
+  - With hybrid CSS+AI: ~$15/1,000 pages (40% cheaper, most robust)
