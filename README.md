@@ -135,26 +135,14 @@ fields:
 
 ---
 
-### Option 4 — Web UI
-**What:** Simple browser-based interface — paste URLs, click Scrape, download ZIP of JSON files.
-
-**Why:** Non-technical users (project managers, content leads) can run it without touching a terminal.
-
-**Cost impact:** None.
-
-**LOE:** 3–4 days (Streamlit). Can be hosted free on [Streamlit Community Cloud](https://streamlit.io/cloud).
-
----
-
 ## Distribution Options
 
 | Option | Effort | Who can run it |
 |--------|--------|----------------|
 | **Zip file** (current) | None | Anyone with Python + API key |
 | **GitHub repo** | 30 min | Anyone with Python + API key |
-| **Streamlit Cloud** (free hosting) | 3–4 days | Anyone with a browser |
 
-For internal use now: share as a zip. For broader rollout: Streamlit Cloud is free and requires no infrastructure.
+For internal use now: share as a zip.
 
 ---
 
