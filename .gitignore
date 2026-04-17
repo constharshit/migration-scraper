@@ -6,3 +6,4 @@ __pycache__/
 *.egg-info/
 .claude
 .claudeignore
+CLAUDE.md
