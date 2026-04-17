@@ -100,8 +100,6 @@ Using `claude-sonnet-4-6`. Average page after HTML cleaning: ~4,000 input tokens
 
 **Cost impact:** ~15% cheaper (fewer output tokens since Claude has a schema to fill).
 
-**LOE:** 2–3 days
-
 ```yaml
 # config/templates/blog_post.yaml
 fields:
@@ -120,8 +118,6 @@ fields:
 
 **Cost impact:** ~40% cheaper ($15 per 1,000 pages vs $25).
 
-**LOE:** 1 week (includes template YAML system)
-
 ---
 
 ### Option 3 — JS-Rendered Pages (Playwright)
@@ -130,8 +126,6 @@ fields:
 **Why:** Currently only works on server-rendered pages. Many modern CMSs need this.
 
 **Cost impact:** No change to AI cost. Slower scraping (~3–5 sec/page vs ~0.5 sec).
-
-**LOE:** 2 days
 
 ---
 
